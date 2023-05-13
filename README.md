@@ -7,6 +7,6 @@ Hypertext archiver
 ```bash
 python3 -m venv virtual
 . ./virtual/bin/activate
-pip install -U pip
+python -m pip install -U pip
 pip install -r requirements.txt
 ```
