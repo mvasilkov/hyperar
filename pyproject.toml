@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperar"
+requires-python = ">=3.11"
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "hyperar.VERSION"}
+
+[tool.setuptools.packages.find]
+include = ["hyperar*"]
+
+[tool.black]
+line-length = 119
+
+[tool.ruff]
+line-length = 119
